@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decisive-wizard.domain", "decisive-wizard.domain\decisive-wizard.domain.csproj", "{9B004585-9DB5-446E-98D1-3255CDEA7B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decisive-wizard.api", "decisive-wizard.api\decisive-wizard.api.csproj", "{3C5E35C1-B4D8-4761-B3BD-DA3B4DEAC93C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B004585-9DB5-446E-98D1-3255CDEA7B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B004585-9DB5-446E-98D1-3255CDEA7B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B004585-9DB5-446E-98D1-3255CDEA7B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B004585-9DB5-446E-98D1-3255CDEA7B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C5E35C1-B4D8-4761-B3BD-DA3B4DEAC93C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C5E35C1-B4D8-4761-B3BD-DA3B4DEAC93C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C5E35C1-B4D8-4761-B3BD-DA3B4DEAC93C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C5E35C1-B4D8-4761-B3BD-DA3B4DEAC93C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
