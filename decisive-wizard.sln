@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decisive-wizard.domain", "d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decisive-wizard.api", "decisive-wizard.api\decisive-wizard.api.csproj", "{3C5E35C1-B4D8-4761-B3BD-DA3B4DEAC93C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decisive-wizard.Data", "decisive-wizard.Data\decisive-wizard.Data.csproj", "{F0C0ACFA-7DCC-4A2A-A717-E6DC3F6BA23B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{3C5E35C1-B4D8-4761-B3BD-DA3B4DEAC93C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C5E35C1-B4D8-4761-B3BD-DA3B4DEAC93C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C5E35C1-B4D8-4761-B3BD-DA3B4DEAC93C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C0ACFA-7DCC-4A2A-A717-E6DC3F6BA23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C0ACFA-7DCC-4A2A-A717-E6DC3F6BA23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C0ACFA-7DCC-4A2A-A717-E6DC3F6BA23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C0ACFA-7DCC-4A2A-A717-E6DC3F6BA23B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
