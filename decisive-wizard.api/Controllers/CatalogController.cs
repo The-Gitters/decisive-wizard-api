@@ -1,11 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Decisive.Wizard.Domain.Catalog;
+using Decisive.Wizard.Data;
 
 namespace Decisive.Wizard.Api.Controllers {
 
     [ApiController]
     [Route("/catalog")]
     public class CatalogController : ControllerBase {
+        private readonly StoreContext _db;
+
+        public CatalogController(StoreContext db) {
+            _db = db;
+        }
 
         [HttpGet]
         public IActionResult GetItems() {
@@ -23,15 +29,12 @@ namespace Decisive.Wizard.Api.Controllers {
 
         }
 
-        [HttpGet("{id:int}")]
-        public IActionResult GetItem(int id) {
-
-            var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
-            item.Id = id;
-
-            return Ok(item);
-
+        [HttpGet]
+        public IActionResult GetItems()
+        {
+            return Ok(_db.Items);
         }
+
 
         [HttpPost]
         public IActionResult Post (Item item) {
