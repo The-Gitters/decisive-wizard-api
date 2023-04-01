@@ -1,13 +1,12 @@
-﻿using decisive-wizard.Domain.Catalog;
+﻿using Decisive.Wizard.Domain.Catalog;
 using Microsoft.EntityFrameworkCore;
 
-namespace decisive-wizard.Data
+namespace Decisive.Wizard.Data
 {
     public class StoreContext : DbContext
     {
         public StoreContext(DbContextOptions<StoreContext> options) : base(options)
-        {
-        }
+        { }
 
         public DbSet<Item> Items { get; set; }
     }
