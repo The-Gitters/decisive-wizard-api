@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decisive.wizard.domain", "d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decisive.wizard.data", "decisive.wizard.data\decisive.wizard.data.csproj", "{3827EF4D-1D22-4FFA-B306-AE4B643A1ADF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E8F247CD-C142-4E4D-AA96-EDD02C3C3027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "decisive.wizard.domain.tests", "tests\decisive.wizard.domain.tests\decisive.wizard.domain.tests.csproj", "{CE207B8B-D9EC-49FA-9815-EC3CFE0368AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{3827EF4D-1D22-4FFA-B306-AE4B643A1ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3827EF4D-1D22-4FFA-B306-AE4B643A1ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3827EF4D-1D22-4FFA-B306-AE4B643A1ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE207B8B-D9EC-49FA-9815-EC3CFE0368AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE207B8B-D9EC-49FA-9815-EC3CFE0368AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE207B8B-D9EC-49FA-9815-EC3CFE0368AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE207B8B-D9EC-49FA-9815-EC3CFE0368AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CE207B8B-D9EC-49FA-9815-EC3CFE0368AB} = {E8F247CD-C142-4E4D-AA96-EDD02C3C3027}
 	EndGlobalSection
 EndGlobal
