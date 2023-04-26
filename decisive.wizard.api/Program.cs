@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
 using decisive.wizard.api.security;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,19 +19,20 @@ builder.Services.AddControllers();
 
 builder.Services.AddAuthentication(options =>
     {
-        options.AddPolicy("delete:catalog", policy =>
-            policy.RequireAuthenticatedUser().RequireClaim("scope", "delete: catalog"));
-    });
-
-    {
         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
         options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    })       
+    })      
     .AddJwtBearer(options =>
     {
         options.Authority = authority;
         options.Audience = audience;
     });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("delete:catalog", policy =>
+        policy.RequireAuthenticatedUser().RequireClaim("scope", "delete: catalog"));
+});
 
 builder.Services.AddDbContext<StoreContext>(options =>
     options.UseSqlite("Data Source=../Registrar.sqlite",
