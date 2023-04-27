@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Decisive.Wizard.Domain.Catalog;
 using Decisive.Wizard.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Decisive.Wizard.Api.Controllers
 {
@@ -104,6 +105,7 @@ namespace Decisive.Wizard.Api.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize("delete:catalog")]
         public IActionResult Delete(int id)
         {
 
